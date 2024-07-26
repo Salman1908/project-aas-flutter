@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 
-class CartBottomBar extends StatelessWidget{
+class CartBottomBar extends StatelessWidget {
   @override
-
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     return Container(
       height: 130,
       padding: EdgeInsets.symmetric(horizontal: 20),
@@ -21,22 +20,20 @@ class CartBottomBar extends StatelessWidget{
         children: [
           Padding(
             padding: EdgeInsets.only(top: 10),
-            child: Row(
-              children: [
-                Icon(
-                  Icons.discount,
-                  color: Color(0xFFFFB608),
+            child: Row(children: [
+              Icon(
+                Icons.discount,
+                color: Color(0xFFFFB608),
+              ),
+              Text(
+                "Voucher promo anda",
+                style: TextStyle(
+                  fontSize: 14,
+                  fontWeight: FontWeight.bold,
+                  color: Color.fromARGB(162, 0, 0, 0),
                 ),
-                Text(
-                  "Voucher promo anda",
-                  style: TextStyle(
-                    fontSize: 14,
-                    fontWeight: FontWeight.bold,
-                    color: Color.fromARGB(162, 0, 0, 0),
-                  ),
-                )
-              ]
-            ),
+              )
+            ]),
           ),
           Divider(height: 25, thickness: 1),
           Row(
@@ -64,7 +61,7 @@ class CartBottomBar extends StatelessWidget{
                 ],
               ),
               GestureDetector(
-                onTap: (){
+                onTap: () {
                   Navigator.pushNamed(context, "OrderPage");
                 },
                 child: Container(

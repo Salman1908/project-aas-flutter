@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class HomeBottomBar extends StatelessWidget{
+class HomeBottomBar extends StatelessWidget {
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     return Container(
       height: 80,
       padding: EdgeInsets.symmetric(horizontal: 25, vertical: 12),
@@ -24,7 +24,7 @@ class HomeBottomBar extends StatelessWidget{
                 "Home",
                 style: TextStyle(
                   color: Color(0xFFF7CA0F),
-                  fontSize: 16,
+                  fontSize: 15,
                   fontWeight: FontWeight.bold,
                 ),
               )
@@ -41,14 +41,14 @@ class HomeBottomBar extends StatelessWidget{
                 "Cari",
                 style: TextStyle(
                   color: Color(0xFFF7CA0F),
-                  fontSize: 16,
+                  fontSize: 15,
                   fontWeight: FontWeight.bold,
                 ),
               )
             ],
           ),
           InkWell(
-            onTap: (){
+            onTap: () {
               print("Tombol Keranjang ditekan");
               Navigator.pushNamed(context, "CartPage");
             },
@@ -63,7 +63,7 @@ class HomeBottomBar extends StatelessWidget{
                   "Keranjang",
                   style: TextStyle(
                     color: Color(0xFFF7CA0F),
-                    fontSize: 16,
+                    fontSize: 15,
                     fontWeight: FontWeight.bold,
                   ),
                 )
@@ -81,7 +81,7 @@ class HomeBottomBar extends StatelessWidget{
                 "Akun",
                 style: TextStyle(
                   color: Color(0xFFF7CA0F),
-                  fontSize: 16,
+                  fontSize: 15,
                   fontWeight: FontWeight.bold,
                 ),
               )

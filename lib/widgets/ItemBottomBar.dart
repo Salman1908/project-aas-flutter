@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class ItemBottomBar extends StatelessWidget{
+class ItemBottomBar extends StatelessWidget {
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     return Container(
       height: 80,
       padding: EdgeInsets.symmetric(vertical: 12, horizontal: 25),
@@ -25,7 +25,7 @@ class ItemBottomBar extends StatelessWidget{
               ),
               child: Icon(
                 CupertinoIcons.cart_fill,
-                color: Colors.black,
+                color: Colors.white,
                 size: 35,
               ),
             ),
